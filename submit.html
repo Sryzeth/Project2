@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pocket Arcade - Suggest &amp; Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="section-box site-header">
+    <div class="brand-row">
+      <div class="brand-badge" aria-hidden="true">PA</div>
+      <div>
+        <h1>Pocket Arcade</h1>
+        <p class="tagline">Quick mini-game ideas, retro picks, and community score notes</p>
+      </div>
+    </div>
+  </header>
+  <!-- Navigation with direct link back to Home -->
+  <nav class="section-box nav-section" aria-label="Main Navigation">
+    <ul class="nav-list">
+      <li><a class="nav-link" href="index.html">Back to Home</a></li>
+      <li><a class="nav-link" href="games.html">Top Mini-Games</a></li>
+      <li><a class="nav-link active" href="submit.html">Suggest &amp; Sign Up</a></li>
+    </ul>
+  </nav>
+  <!-- Input Form -->
+  <section class="section-box content-section">
+    <h2>Pitch a Game or Join Playtests</h2>
+    <p>Fill out the form below to share a mini-game idea or sign up for playtest notes.</p>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="player-name">Your Name</label>
+        <input id="player-name" name="player-name" type="text" placeholder="Alex Rivera" required>
+      </div>
+      <div class="form-group">
+        <label for="player-email">Email Address</label>
+        <input id="player-email" name="player-email" type="email" placeholder="alex@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="genre">Favorite Style</label>
+        <select id="genre" name="genre">
+          <option value="arcade">Arcade Action</option>
+          <option value="puzzle">Puzzle</option>
+          <option value="platformer">Platformer</option>
+          <option value="cozy">Cozy Time-Management</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="idea">Game Idea or Feedback</label>
+        <textarea id="idea" name="idea" rows="4" placeholder="Describe your idea in 2-3 sentences..."></textarea>
+      </div>
+      <button class="submit-btn" type="submit">Send Idea</button>
+    </form>
+  </section>
+  <!-- Contact & Reference Footer -->
+  <footer class="section-box site-footer">
+    <p><strong>Contact &amp; Info:</strong> hello@pocketarcade.com | Pocket Arcade Student Project</p>
+    <p>
+      Return anytime:
+      <a href="index.html">Home Page</a> |
+      <a href="games.html">Top Mini-Games</a>
+    </p>
+  </footer>
+</body>
+</html>
