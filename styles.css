@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+/* Base page typography and background color */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #131722;
+  color: #f4f6fb;
+}
+/* Shared box-model container for page sections */
+.section-box {
+  max-width: 900px;
+  margin: 0 auto 20px auto; /* Centers section and adds bottom spacing */
+  padding: 20px;           /* Inner breathing room around content */
+  border: 3px solid #38bdf8; /* Visible border for clear box-model structure */
+  border-radius: 10px;
+  background-color: #1d2436;
+}
+/* TITLE & HEADER SECTION (Shared across all three pages)*/
+.site-header {
+  border-color: #f59e0b;
+  background-color: #241e33;
+}
+.brand-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.brand-badge {
+  width: 56px;
+  height: 56px;
+  border: 2px solid #fbbf24;
+  border-radius: 8px;
+  background-color: #f59e0b;
+  color: #131722;
+  font-weight: bold;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #fbbf24;
+}
+.tagline {
+  margin: 4px 0 0 0;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+/* NAVIGATION BAR SECTION (Shared across all three pages) */
+.nav-section {
+  padding: 12px 20px;
+  border-color: #38bdf8;
+  background-color: #182234;
+}
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.nav-link {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid #38bdf8;
+  border-radius: 6px;
+  color: #e0f2fe;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-link:hover,
+.nav-link.active {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+/* PRIMARY & SECONDARY CONTENT SECTIONS*/
+.content-section h2 {
+  margin-top: 0;
+  color: #7dd3fc;
+}
+.highlight-box {
+  margin: 16px 0;
+  padding: 14px;
+  border: 2px dashed #a78bfa;
+  border-radius: 8px;
+  background-color: #25203b;
+}
+.highlight-box h3 {
+  margin-top: 0;
+  color: #c4b5fd;
+}
+/* Styled lists for pages */
+.styled-list {
+  margin: 10px 0 0 0;
+  padding-left: 22px;
+}
+.styled-list li {
+  margin-bottom: 8px;
+}
+/* Simple responsive card look for items */
+.game-card {
+  margin: 14px 0;
+  padding: 14px;
+  border: 2px solid #334155;
+  border-radius: 8px;
+  background-color: #161c2b;
+}
+.game-card h3 {
+  margin: 0 0 6px 0;
+  color: #fbbf24;
+}
+.game-card p {
+  margin: 0;
+  color: #e2e8f0;
+}
+/* FORM STYLING */
+.form-group {
+  margin-bottom: 14px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #e2e8f0;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #475569;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+.submit-btn {
+  padding: 10px 20px;
+  border: 2px solid #34d399;
+  border-radius: 6px;
+  background-color: #10b981;
+  color: #06281e;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #34d399;
+}
+/* FOOTER / BOTTOM SECTION */
+.site-footer {
+  margin-bottom: 0;
+  border-color: #34d399;
+  background-color: #162629;
+  font-size: 0.95rem;
+}
+.site-footer p {
+  margin: 6px 0;
+}
+.site-footer a {
+  color: #6ee7b7;
+}
